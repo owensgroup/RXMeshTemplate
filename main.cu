@@ -11,7 +11,7 @@ int main(int argc, char** argv)
         exit(EXIT_SUCCESS);
     }
 
-    RXMeshStatic rx(std::string(argv[1]));
+    RXMeshStatic rx(argv[1]);
 
     polyscope::show();
 }
