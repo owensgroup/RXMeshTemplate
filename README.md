@@ -1,14 +1,33 @@
-# CUDATemplate [![Windows](https://github.com/Ahdhn/CUDATemplate/actions/workflows/Windows.yml/badge.svg)](https://github.com/Ahdhn/CUDATemplate/actions/workflows/Windows.yml) [![Ubuntu](https://github.com/Ahdhn/CUDATemplate/actions/workflows/Ubuntu.yml/badge.svg)](https://github.com/Ahdhn/CUDATemplate/actions/workflows/Ubuntu.yml)
-My template for starting a new CUDA project using CMake on Windows (Visual Studio) or Linux (gcc, clang). The template also includes minimal YAML scripts for CI using Github Actions on both Windows (Visual Studio 2019) and Linux (Ubuntu). 
+# RXMeshTemplate [![Windows](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Windows.yml/badge.svg)](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Windows.yml) [![Ubuntu](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Ubuntu.yml/badge.svg)](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Ubuntu.yml)
 
+A minimal CMake template project for developing GPU/CUDA projects that use [RXMesh](https://github.com/owensgroup/RXMesh/) on both Windows (Visual Studio) and Linux (GCC/Clang), with GitHub Actions CI included.
 
-## Build 
-You might first need to change the project name in the `CMakeLists.txt` and the folder name and fill in any `TODO`. Then simply run 
+📘 Documentation: [RXMesh Docs](https://ahdhn.github.io/RXMeshDocs//)
 
-```
+---
+
+## Build
+
+To configure and build:
+
+```bash
 mkdir build
-cd build 
+cd build
 cmake ..
 ```
+This generates a `.sln` file on Windows or a Makefile on Linux. You can control rendering support using the `RX_USE_POLYSCOPE` option:
 
-Depending on the system, this will generate either a `.sln` project on Windows or a `make` file for a Linux system. 
+```bash
+cmake -DRX_USE_POLYSCOPE=ON ..
+```
+
+Set it to `OFF` to disable [Polyscope](https://polyscope.run/).
+
+
+---
+
+## Notes
+
+- You may want to rename the project in `CMakeLists.txt` and refactor the folder name accordingly.
+
+- CI runs on Windows and Ubuntu using GitHub Actions.
