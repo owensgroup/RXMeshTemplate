@@ -1,4 +1,4 @@
-# RXMeshTemplate [![Windows](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Windows.yml/badge.svg)](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Windows.yml) [![Ubuntu](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Ubuntu.yml/badge.svg)](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Ubuntu.yml)
+# RXMeshTemplate [![Windows](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Windows.yml/badge.svg?branch=main)](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Windows.yml) [![Ubuntu](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Ubuntu.yml/badge.svg?branch=main)](https://github.com/owensgroup/RXMeshTemplate/actions/workflows/Ubuntu.yml)
 
 A minimal CMake template project for developing GPU/CUDA projects that use [RXMesh](https://github.com/owensgroup/RXMesh/) on both Windows (Visual Studio) and Linux (GCC/Clang), with GitHub Actions CI included.
 
