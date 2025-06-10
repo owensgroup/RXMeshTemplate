@@ -9,7 +9,7 @@ jobs:
         with:
           cuda: '12.5.0'  
           linux-local-args: '["--toolkit"]'
-          use-github-cache: false
+          use-local-cache: false
       - run: nvcc -V      
       - name: Checkout
         uses: actions/checkout@v3            
