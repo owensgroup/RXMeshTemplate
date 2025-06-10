@@ -37,7 +37,7 @@ set(cuda_flags
     $<$<CXX_COMPILER_ID:GNU>:-Xcompiler -Wall -fopenmp -O3>
 	$<$<CXX_COMPILER_ID:Clang>:-Xcompiler -Wall -fopenmp -O3>
 	$<$<CXX_COMPILER_ID:MSVC>:-Xcompiler ${MSVC_XCOMPILER_FLAGS}>
-    -Xcudafe=--display_error_number    
+    #-Xcudafe=--display_error_number    
 	-lineinfo	
 	--expt-extended-lambda	
 	-use_fast_math		

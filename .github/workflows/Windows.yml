@@ -10,6 +10,7 @@ jobs:
           cuda: '12.4.0'  
           linux-local-args: '["--toolkit"]'
           use-local-cache: false
+          use-github-cache: false
       - run: nvcc -V      
       - name: Checkout
         uses: actions/checkout@v3            
