@@ -31,9 +31,9 @@ FetchContent_Declare(rxmesh
 )
 FetchContent_MakeAvailable(rxmesh)
 
-#if(NOT COMMAND rxmesh_add_app)
-#    include("${rxmesh_SOURCE_DIR}/cmake/RXMeshApp.cmake")
-#endif()
+if(NOT COMMAND rxmesh_add_app)
+    include("${rxmesh_SOURCE_DIR}/cmake/RXMeshApp.cmake")
+endif()
 
 rxmesh_add_app(${PROJECT_NAME}
     SOURCES main.cu
